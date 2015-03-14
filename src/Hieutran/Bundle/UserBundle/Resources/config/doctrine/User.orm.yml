@@ -1,0 +1,8 @@
+Hieutran\Bundle\UserBundle\Entity\User:
+    type:  entity
+    table: tbl_users
+    id:
+        id:
+            type: integer
+            generator:
+                strategy: AUTO
