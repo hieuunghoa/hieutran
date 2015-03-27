@@ -1,0 +1,4 @@
+services:
+#    hieutran_backend.example:
+#        class: Hieutran\Bundle\BackendBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

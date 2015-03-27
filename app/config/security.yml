@@ -26,8 +26,9 @@ security:
         main:
             pattern: ^/
             form_login:
-               provider: fos_userbundle
-               csrf_provider: form.csrf_provider
+                default_target_path: /admin/dashboard
+                provider: fos_userbundle
+                csrf_provider: form.csrf_provider
             logout:       true
             anonymous:    true
 
@@ -37,4 +38,4 @@ security:
     # of your application based on roles, ip, host or methods
     # http://symfony.com/doc/current/cookbook/security/access_control.html
     access_control:
-        #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+#        - { path: ^/admin, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }

@@ -1,0 +1,4 @@
+hieutran_backend_homepage:
+    type: rest
+    resource: Hieutran\Bundle\BackendBundle\Controller\DashboardController
+    name_prefix:  admin_dashboard_

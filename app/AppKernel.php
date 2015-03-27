@@ -18,8 +18,11 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new FOS\UserBundle\FOSUserBundle(),
+            new FOS\RestBundle\FOSRestBundle(),
+            new JMS\SerializerBundle\JMSSerializerBundle(),
 
             new Hieutran\Bundle\UserBundle\HieutranUserBundle(),
+            new Hieutran\Bundle\BackendBundle\HieutranBackendBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {
