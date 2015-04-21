@@ -93,8 +93,7 @@ sensio_framework_extra:
     router:  { annotations: true }
 
 fos_rest:
+    format_listener: true
     routing_loader:
         default_format: html
-    format_listener: true
-    view:
-        view_response_listener: true
+        include_format: false

@@ -1,6 +1,6 @@
 hieutran_user:
     resource: "@HieutranUserBundle/Resources/config/routing.yml"
-    prefix:   /admin
+    prefix:   /
 
 hieutran_backend:
     type:   rest
