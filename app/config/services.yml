@@ -7,3 +7,11 @@ services:
 #    service_name:
 #        class: AppBundle\Directory\ClassName
 #        arguments: ["@another_service_name", "plain_value", "%parameter_name%"]
+
+    app.twig_extension:
+        class: Hieutran\Twig\AppExtension
+        public: false
+        tags:
+            - { name: twig.extension }
+        arguments:
+            - '@request_stack'
